@@ -1,0 +1,156 @@
+html {
+    font-size: 62.5%;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+}
+
+.main {
+    background-color: var(--darkGray);
+    height: 100vh;
+    width: 100vw;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+.card {
+    display: flex;
+    gap: 30px;
+    background-color: white;
+    padding: 17px 20px 17px 30px;
+    border-radius: 25px;
+    box-shadow: 14px 7px 10px rgba(0, 0, 0, 0.2);
+
+    max-width: 675px;
+    max-height: 465px;
+
+}
+
+.card .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px 0;
+    padding: 10px;
+
+    max-width: 300px;
+}
+
+.card .content > * , .card .content form > *{
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 3.7rem;
+    font-weight: 700;
+    color: var(--btn);
+}
+
+.text {
+    font-size: 1.5rem;
+}
+
+.card .content .list li {
+    margin-bottom: 9px;
+    font-size: 1.2rem;
+}
+
+.icon-list {
+    width: 15px;
+    margin-right: 13px;
+    transform: translateY(23%);
+}
+
+.card .content .form .labelValidation {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.card .content .form .labelValidation .label{
+    color: var(--btn);
+}
+
+.card .content .form .labelValidation .validation{
+    color: var(--tomato);
+}
+
+.denied {
+    background-color: hsl(5, 100%, 95%);
+    border: 1px solid var(--tomato);
+    color: var(--tomato);
+}
+
+.card .content .form .email {
+    padding: 10px;
+    border: 1px solid var(--gray);
+    border-radius: 8px;
+    width: 100%;
+    height: 45px;
+}
+
+.btn {
+    background-color: var(--btn);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 15px 30px;
+    width: 100%;
+    height: 45px;
+    border-radius: 8px;
+    border: 1px solid var(--btn);
+    
+    transition: 0.5s ease-in;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background: linear-gradient(to right, var(--activeC1), var(--activeC2));
+    border: none;
+    
+    transition: 0.5s ease-out;
+}
+
+.card .img img{
+    width: 290px;
+}
+
+.sucess {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+
+    background-color: white;
+    padding: 17px 40px 17px 40px;
+    border-radius: 25px;
+    box-shadow: 14px 7px 10px rgba(0, 0, 0, 0.2);
+    
+    max-width: 375px;
+    max-height: 665px;
+}
+
+.sucess > * {
+    margin-bottom: 25px;
+}
+.sucess .icon {
+    width: 55px;
+}
+
+.sucess .title {
+    line-height: 35px;
+}
+
+.hide {
+    display:none;
+    transition: 0.8s ease-in-out;
+}
+
+#typedEmail {
+    font-weight: 700;
+}

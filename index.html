@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="src/css/variables.css">
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/responsive.css">
+    
+    <link rel="shortcut icon" href="src/images/favicon-32x32.png" type="image/x-icon">
+    <title>FE Mentor - Newsletter sign-up form with success message</title>
+</head>
+<body>
+
+    <main class="main">
+        <div class="card">
+            <div class="content">
+                <h1 class="title">Stay updated!</h1>
+                <p class="text">Join 60,000+ product managers receiving monthly updates on:</p>
+    
+                <ul class="list">
+                    <li><img src="src/images/icon-list.svg" alt="icon-list" class="icon-list">Product discovery and building what matters</li>
+                    <li><img src="src/images/icon-list.svg" alt="icon-list" class="icon-list">Measuring to ensure updates are a success</li>
+                    <li><img src="src/images/icon-list.svg" alt="icon-list" class="icon-list">And much more!</li>
+                    <li></li>
+                </ul>
+
+                <form action="index.html" method="get" class="form">
+                    <div class="labelValidation">
+                        <label for="email" class="label">Email address</label>
+                        <label for="email" class="validation hide">Valid email required</label>
+                    </div>
+                    <input type="text" name="email" id="email" placeholder="email@company.com" class="email">
+                
+                
+                    <button type="submit" class="btn" id="btn">Subscribe to monthtly newsletter</button>
+                </form>
+            </div>
+
+            <div class="img">
+                <picture class="illustration">
+                    <source srcset="./src/images/illustration-sign-up-desktop.svg" media="(min-width: 530px)">
+                    <img src="./src/images/illustration-sign-up-mobile.svg" alt="illustration-sign-up">
+                </picture>
+            </div>
+        </div>
+        
+        <div class="sucess hide">
+            <img src="src/images/icon-success.svg" alt="icon" class="icon">
+            <h1 class="title">Thanks for subscribing!</h1>
+            <p class="text">A confirmation email has been sent to <span id="typedEmail"></span>. Please open it and click the button inside to confirm your subscript.</p>
+            
+            <button type="button" class="btn" id="btnConfirm">Dismiss menssage</button>
+        </div>
+    </main>
+
+    <script src="src/js/index.js" type="text/javascript"></script>
+</body>
+</html>

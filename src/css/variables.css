@@ -1,0 +1,10 @@
+:root {
+    --tomato: hsl(4, 100%, 67%);
+    --darkGray: hsl(235, 18%, 26%);
+    --gray: hsl(231, 7%, 60%);
+    --btn: hsl(232, 31%, 20%);
+
+    --activeC1: hsl(348, 100%, 67%);
+    --activeC2: hsl(11, 100%, 64%);
+    
+}
