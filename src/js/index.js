@@ -11,11 +11,11 @@ function validate() {
     if (input.value.trim() === '' || !input.value.includes('@')) {
         input.classList.add('denied');
         txtValidation.classList.remove('hide');
-        return false; // Retorna falso para indicar que a validação falhou
+        return false;
     } else {
         input.classList.remove('denied');
         txtValidation.classList.add('hide');
-        return true; // Retorna true para indicar que a validação passou
+        return true;
     }
 }
 
@@ -41,7 +41,7 @@ function emailSuccess () {
 btn.addEventListener('click', function(event) {
     check = validate();
     if (! check) {
-        event.preventDefault(); // Impede o envio do formulário se a validação falhar
+        event.preventDefault();
     } else {
         showDisplay();
         emailSuccess();
